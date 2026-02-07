@@ -14,14 +14,6 @@ public:
     rtc.begin();
   }
 
-  void setTime(uint8_t hour, uint8_t minute, uint8_t second) {
-    rtc.setTime(hour, minute, second);
-  }
-
-  void setDate(uint8_t day, uint8_t month, uint16_t year) {
-    rtc.setDate(day, month, year);
-  }
-
   TimeHMSS getCurrentTime() {
     Time t = rtc.getTime();
     TimeHMSS result;
@@ -46,21 +38,12 @@ public:
     return result;
   }
 
-  Time getRawTime() {
-    return rtc.getTime();
-  }
-
   bool isTimeMatch(const TimeHMSS& target) {
     TimeHMSS now = getCurrentTime();
     return now.hour == target.hour && 
     now.minute == target.minute && 
     now.second == target.second && 
     now.meridiem == target.meridiem;
-  }
-
-  unsigned long getSecondsSinceMidnight() {
-    Time t = rtc.getTime();
-    return (unsigned long)t.hour * 3600 + (unsigned long)t.min * 60 + (unsigned long)t.sec;
   }
 
   unsigned long getUnixTime() {
