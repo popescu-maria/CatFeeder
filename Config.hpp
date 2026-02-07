@@ -3,12 +3,12 @@
 
 #include <Arduino.h>
 
-const int RS = 9, EN = 8, D4 = 7, D5 = 6, D6 = 5, D7 = 4;
-const int NUM_COLS = 16;
-const int NUM_ROWS = 2;
+const uint8_t RS = 9, EN = 8, D4 = 7, D5 = 6, D6 = 5, D7 = 4;
+const uint8_t NUM_COLS = 16;
+const uint8_t NUM_ROWS = 2;
 
-const byte BUZZER_PIN = 11;
-const byte SERVO_PIN = 10;
+const uint8_t BUZZER_PIN = 11;
+const uint8_t SERVO_PIN = 10;
 
 const uint8_t UP_PIN = 2;
 const uint8_t DOWN_PIN = 3;
@@ -58,6 +58,7 @@ struct FeederConfig {
   PortionSize quantity;
   unsigned long lastFeedingTime;
 };
+
 
 
 #endif
