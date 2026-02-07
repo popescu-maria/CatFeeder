@@ -90,9 +90,9 @@ private:
 
   uint8_t lastFeedSecond = 255;
 
-  static constexpr unsigned long SMALL_PORTION_MS = 600;
-  static constexpr unsigned long MEDIUM_PORTION_MS = 1000;
-  static constexpr unsigned long LARGE_PORTION_MS = 1500;
+  static constexpr unsigned long SMALL_PORTION_MS = 400;
+  static constexpr unsigned long MEDIUM_PORTION_MS = 600;
+  static constexpr unsigned long LARGE_PORTION_MS = 1000;
 
   unsigned long feedStartTime = 0;
   unsigned long openDuration = 0;
@@ -191,5 +191,6 @@ private:
     return state == MenuState::EDIT_TIME || state == MenuState::EDIT_INTERVAL || state == MenuState::EDIT_TIME_COUNT;
   }
 };
+
 
 #endif
