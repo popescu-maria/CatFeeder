@@ -18,12 +18,3 @@ My project is an automated cat feeder controlled by an Arduino. It allows users 
 <img src="Images/Cat_Feeder_with_cat.jpg" alt="Cat feeder in action." width="400">
 <img src="Images/Cat_Feeder.jpg" alt="Cat feeder final look." width="400">
 
-System boundary: the electronics, software, and mechanical dispenser form the internal system, while the cat remains external (but not needed for testing the feeder).
-
-Where intelligence lives: intelligence is in the Arduino code, which manages scheduling, user input, and actuator control.
-
-Hardest technical problem: the servo mechanics syncronizatoin, especially if weight measurement is added.
-
-Minimum demo: setting a feeding time and having the servo open the hatch at that moment.
-
-Why it’s not just a tutorial: because the design combines scheduling, UI, manual mode, alerts, and (maybe) weight sensing in a customized system rather than following a single recipe.
