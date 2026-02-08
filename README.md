@@ -15,6 +15,9 @@ My project is an automated cat feeder controlled by an Arduino. It allows users 
 * ** Foamboard Housing **
 * **Resistors and wiring as required**
 
+<img src="Images/Cat_Feeder_with_cat.jpg" alt="Cat feeder in action." width="400">
+<img src="Images/Cat_Feeder.jpg" alt="Cat feeder final look." width="400">
+
 System boundary: the electronics, software, and mechanical dispenser form the internal system, while the cat remains external (but not needed for testing the feeder).
 
 Where intelligence lives: intelligence is in the Arduino code, which manages scheduling, user input, and actuator control.
