@@ -16,5 +16,6 @@ My project is an automated cat feeder controlled by an Arduino. It allows users 
 * **Resistors and wiring as required**
 
 <img src="Images/Cat_Feeder_with_cat.jpg" alt="Cat feeder in action." width="400">
+Final look:
 <img src="Images/Cat_Feeder.jpg" alt="Cat feeder final look." width="400">
 
